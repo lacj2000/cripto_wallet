@@ -7,10 +7,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <%= javascript_include_tag "jquery-3.6.3", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "notify", "data-turbo-track": "reload" %>
+
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <%= yield %>
   </body>
+  <script>$.notify("Hello World", "success");</script>
+
 </html>
