@@ -1,0 +1,10 @@
+pt-BR:
+  welcome:
+    index:
+      title: "Seja bem-vindo!"
+      subtitle: "Este é o Crypto Wallet, um app de cadatro de moedas. Uma aplicação para aprendizado de ruby on rails."
+      message: "Para começar, selecione uma das opções abaixo:"
+      buttons:
+        coin: "Moedas"
+        mining_type: "Tipos de mineração"
+
