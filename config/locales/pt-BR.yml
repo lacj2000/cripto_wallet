@@ -7,4 +7,31 @@ pt-BR:
       buttons:
         coin: "Moedas"
         mining_type: "Tipos de mineração"
-
+  mining_type:
+    index:
+    new:
+      title: "Novo tipo de mineração:"
+    edit:
+      title: "Editando tipo de mineração:"
+    buttons:
+      new_mining_type: "Novo tipo de mineração"
+      show_this_mining_type: "Mostrar esse tipo de mineração"
+      edit_this_mining_type: "Editar esse tipo de mineração"
+      delete_this_mining_type: "Apagar esse tipo de mineração"
+      back_to_mining_types: "Voltar aos tipos de mineração"
+  coin:
+    index:
+    new:
+      title: "Novo moeda:"
+    edit:
+      title: "Editando moeda:"
+    buttons:
+      new_coin: "Novo moeda"
+      show_this_coin: "Mostrar essa moeda"
+      edit_this_coin: "Editar essa moeda"
+      delete_this_coin: "Apagar essa moeda"
+      back_to_coins: "Voltar as moedas"
+  generic_links:
+    edit: "Editar"
+    show: "Mostrar "
+    delete: "Deletar"

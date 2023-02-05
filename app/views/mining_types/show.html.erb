@@ -3,8 +3,7 @@
 <%= render @mining_type %>
 
 <div>
-  <%= link_to "Edit this mining type", edit_mining_type_path(@mining_type) %> |
-  <%= link_to "Back to mining types", mining_types_path %>
-
-  <%= button_to "Destroy this mining type", @mining_type, method: :delete %>
+  <%= link_to I18n.t("mining_type.buttons.edit_this_mining_type"), edit_mining_type_path(@mining_type) %> <br/>
+  <%= link_to I18n.t("mining_type.buttons.delete_this_mining_type"), @mining_type, data: {turbo_method: :delete} %> <br/>
+  <%= link_to I18n.t("mining_type.buttons.back_to_mining_types"), mining_types_path %>
 </div>

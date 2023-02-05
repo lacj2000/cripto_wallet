@@ -9,6 +9,34 @@ en:
       buttons:
         coin: "Coins"
         mining_type: "Mining types"
+  mining_type:
+    index:
+    new:
+      title: "New mining type:"
+    edit:
+      title: "Editing mining type:"
+    buttons:
+      new_mining_type: "New mining type"
+      show_this_mining_type: "Show this mining type"
+      edit_this_mining_type: "Edit this mining type"
+      delete_this_mining_type: "Delete this mining type"
+      back_to_mining_types: "Back to mining types"
+  coin:
+    index:
+    new:
+      title: "New coin:"
+    edit:
+      title: "Editing coin:"
+    buttons:
+      new_coin: "New coin"
+      show_this_coin: "Show this coin"
+      edit_this_coin: "Edit this coin"
+      delete_this_coin: "Delete this coin"
+      back_to_coins: "Back to coins"
+  generic_links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
 
 
 

@@ -1,12 +1,26 @@
 <div id="<%= dom_id mining_type %>">
+  <h1  class="display-6 fw-bold">
+    <%= mining_type.model_name.human() %>: <%= mining_type.description %>
+  </h1>
   <p>
-    <strong>Description:</strong>
+    <strong><%= mining_type.class.human_attribute_name("acronym") %>:</strong>
+    <%= mining_type.acronym %>
+  </p>
+
+  <p>
+    <strong><%= mining_type.class.human_attribute_name("description") %>:</strong>
     <%= mining_type.description %>
   </p>
 
   <p>
-    <strong>Acronym:</strong>
-    <%= mining_type.acronym %>
+    <strong><%= mining_type.class.human_attribute_name("created_at") %>:</strong>
+    <%= mining_type.created_at %>
   </p>
+
+  <p>
+    <strong><%= mining_type.class.human_attribute_name("updated_at") %>:</strong>
+    <%= mining_type.updated_at %>
+  </p>
+
 
 </div>

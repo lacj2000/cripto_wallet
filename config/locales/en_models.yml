@@ -3,7 +3,7 @@ en:
     models:
       mining_type:
         one: "Mining Type"
-        others: "Mining Types"
+        other: "Mining Types"
       coin:
         one: 'Coin'
         other: 'Coins'
@@ -13,7 +13,7 @@ en:
         description: "Description"
         created_at: "Created at"
         updated_at: "Updated at"
-      coins:
+      coin:
         acronym: "Acronym"
         description: "Description"
         url_image: "URL Image"

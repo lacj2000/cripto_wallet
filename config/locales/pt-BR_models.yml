@@ -3,7 +3,7 @@ pt-BR:
     models:
       mining_type:
         one: "Tipo de mineração"
-        others: "Tipos de mineração"
+        other: "Tipos de mineração"
       coin:
         one: 'Moeda'
         other: 'Moedas'
