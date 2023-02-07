@@ -21,6 +21,39 @@
     <strong><%= mining_type.class.human_attribute_name("updated_at") %>:</strong>
     <%= mining_type.updated_at %>
   </p>
+  <p>
+    <% coins = mining_type.coins %>
+    <% coin_reference = mining_type.coins.first.class %>
+    <table id="coins" class="table table-hover table-striped mb-4">
+    <thead>
+      <tr>
+        <th colspan="3">
+          <strong><%= coin_reference.model_name.human(count:coins.length  ) %>:</strong>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="1"></th>
+        <th><%= coin_reference.human_attribute_name("acronym") %></th>
+        <th><%= coin_reference.human_attribute_name("description") %></th>
+      </tr>
+    </thead>
+    <% coins.each do |coin| %>
+      <tr>
+        <td>
+          <%= image_tag(coin.url_image, size:"25x25")%>
+        </td>
+        <td>
+          <b> <%= coin.acronym %> </b>
+        </td>
+        <td>
+          <%= coin.description %>
+        </td>
+
+      </tr>
+    <% end %>
+  </table>
+  </p>
+
 
 
 </div>
