@@ -1,17 +1,43 @@
 <div id="<%= dom_id coin %>">
-  <p>
-    <strong>Description:</strong>
+
+  <h1  class="display-6 fw-bold">
     <%= coin.description %>
-  </p>
+    <%= image_tag coin.url_image, size:"50x50", class:"mb-3" %>
+  </h1>
 
   <p>
-    <strong>Acronym:</strong>
+    <strong><%= coin.class.human_attribute_name("acronym") %>:</strong>
     <%= coin.acronym %>
   </p>
 
   <p>
-    <strong>Url image:</strong>
+    <strong><%= coin.class.human_attribute_name("description") %>:</strong>
+    <%= coin.description %>
+  </p>
+
+  <p>
+    <strong><%= coin.class.human_attribute_name("url_image") %>:</strong>
     <%= coin.url_image %>
   </p>
 
+  <p>
+    <strong><%= coin.class.human_attribute_name("created_at") %>:</strong>
+    <%= coin.created_at %>
+  </p>
+
+  <p>
+    <strong><%= coin.class.human_attribute_name("updated_at") %>:</strong>
+    <%= coin.updated_at  %>
+  </p>
+  <p>
+    <strong><%= coin.mining_type.class.model_name.human() %>:</strong>
+  </p>
+  <p class="ms-3">
+    <strong><%= coin.mining_type.class.human_attribute_name("acronym") %>:</strong>
+    <%= coin.mining_type.acronym %>
+  </p>
+  <p class="ms-3">
+    <strong><%= coin.mining_type.class.human_attribute_name("description") %>:</strong>
+    <%= coin.mining_type.description %>
+  </p>
 </div>

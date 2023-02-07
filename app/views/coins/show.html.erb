@@ -3,8 +3,7 @@
 <%= render @coin %>
 
 <div>
-  <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
-  <%= link_to "Back to coins", coins_path %>
-
-  <%= button_to "Destroy this coin", @coin, method: :delete %>
+  <%= link_to I18n.t("coin.buttons.edit_this_coin"), edit_coin_path(@coin) %> <br/>
+  <%= link_to I18n.t("coin.buttons.delete_this_coin"), @coin, data: {turbo_method: :delete} %> <br/>
+  <%= link_to I18n.t("coin.buttons.back_to_coins"), coins_path %>
 </div>
