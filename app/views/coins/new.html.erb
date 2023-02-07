@@ -1,9 +1,8 @@
-<h1>New coin</h1>
-
-<%= render "form", coin: @coin %>
-
-<br>
-
 <div>
-  <%= link_to "Back to coins", coins_path %>
+  <h1 class="display-6 fw-bold"><%= I18n.t("coin.new.title")%></h1>
+  <%= render "form", coin: @coin %>
+  <br>
+  <div>
+    <%= link_to I18n.t("coin.buttons.back_to_coins"), coins_path %>
+  </div>
 </div>

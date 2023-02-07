@@ -22,11 +22,11 @@ pt-BR:
   coin:
     index:
     new:
-      title: "Novo moeda:"
+      title: "Nova moeda:"
     edit:
       title: "Editando moeda:"
     buttons:
-      new_coin: "Novo moeda"
+      new_coin: "Nova moeda"
       show_this_coin: "Mostrar essa moeda"
       edit_this_coin: "Editar essa moeda"
       delete_this_coin: "Apagar essa moeda"

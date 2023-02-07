@@ -18,5 +18,7 @@ pt-BR:
         description: "Descrição"
         url_image: "URL da Imagem"
         image: "Imagem"
+        mining_type_id: "ID do tipo de mineração"
+        mining_type: "Tipo de mineração"
         created_at: "Criado em"
         updated_at: "Atualizado em"

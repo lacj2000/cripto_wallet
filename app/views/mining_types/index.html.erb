@@ -3,7 +3,7 @@
   <%# title mining types %>
   <h1 class="display-6 fw-bold"><%= @mining_types.model_name.human(count:2) %></h1>
 
-  <table id="mining_types" class="table table-striped">
+  <table id="mining_types" class="table table-hover table-striped">
   <%# mining types table header  %>
     <thead>
       <tr>
@@ -33,7 +33,7 @@
           <%= link_to(I18n.t("generic_links.edit"), edit_mining_type_path(mining_type))%>
         </td>
         <td>
-          <%= link_to(I18n.t("generic_links.delete"))%>
+          <%= link_to(I18n.t("generic_links.delete"), mining_type, data: {turbo_method: :delete} )%>
         </td>
       </tr>
     <% end %>

@@ -1,5 +1,6 @@
 class CoinsController < ApplicationController
   before_action :set_coin, only: %i[ show edit update destroy ]
+  before_action :set_mining_types_to_selection, only: %i[ new edit ]
 
   # GET /coins or /coins.json
   def index
@@ -65,6 +66,10 @@ class CoinsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def coin_params
-      params.require(:coin).permit(:description, :acronym, :url_image)
+      params.require(:coin).permit(:description, :acronym, :url_image, :mining_type_id)
+    end
+
+    def set_mining_types_to_selection
+      @mining_types_to_selection = MiningType.all.collect{|m|[ m.description,m.id]}
     end
 end

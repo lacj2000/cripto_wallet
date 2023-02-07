@@ -1,10 +1,9 @@
-<h1>Editing coin</h1>
-
-<%= render "form", coin: @coin %>
-
-<br>
-
 <div>
-  <%= link_to "Show this coin", @coin %> |
-  <%= link_to "Back to coins", coins_path %>
+  <h1 class="display-6 fw-bold"><%= I18n.t("coin.edit.title")%></h1>
+  <%= render "form", coin: @coin %>
+  <br>
+  <div>
+    <%= link_to I18n.t("coin.buttons.show_this_coin"), @coin %> |
+    <%= link_to I18n.t("coin.buttons.back_to_coins"), coins_path %>
+  </div>
 </div>
